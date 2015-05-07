@@ -21,7 +21,7 @@
     <link href="css/timeline.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -34,8 +34,9 @@
 
 
     <!-- Timeline Javascript Courtesy of: http://tympanus.net/codrops/2011/12/05/lateral-on-scroll-sliding-with-jquery/ -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.11333.js"></script>
-    <script src="js/jqueryEasing.js"></script>
+    <script type="text/javascript" src="js/jqueryEasing.js"></script>
 
 
 </head>
@@ -129,106 +130,112 @@
             <div class="col-lg-12 text-center">
                 <h2>Resume</h2>
                 <hr class="star-light">
-                <div id="ss-container" class="ss-container">
-                    <div class="ss-row">
-                        <div class="ss-left">
-                            <h2 id="november">November</h2>
-                        </div>
-                        <div class="ss-right">
-                            <h2>2011</h2>
-                        </div>
-                    </div>
-                    <div class="ss-row ss-medium">
-                        <div class="ss-left">
-                            <a href="#" class="ss-circle ss-circle-1">Some title</a>
-                        </div>
-                        <div class="ss-right">
-                            <h3>
-                                <span>November 28, 2011</span>
-                                <a href="#">Some Title</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="ss-row">
-                        <div class="ss-left">
-                            <h2 id="november">November</h2>
-                        </div>
-                        <div class="ss-right">
-                            <h2>2011</h2>
-                        </div>
-                    </div>
-                    <div class="ss-row ss-medium">
-                        <div class="ss-left">
-                            <a href="#" class="ss-circle ss-circle-1">Some title</a>
-                        </div>
-                        <div class="ss-right">
-                            <h3>
-                                <span>November 28, 2011</span>
-                                <a href="#">Some Title</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="ss-row">
-                        <div class="ss-left">
-                            <h2 id="november">November</h2>
-                        </div>
-                        <div class="ss-right">
-                            <h2>2011</h2>
-                        </div>
-                    </div>
-                    <div class="ss-row ss-medium">
-                        <div class="ss-left">
-                            <a href="#" class="ss-circle ss-circle-1">Some title</a>
-                        </div>
-                        <div class="ss-right">
-                            <h3>
-                                <span>November 28, 2011</span>
-                                <a href="#">Some Title</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="ss-row">
-                        <div class="ss-left">
-                            <h2 id="november">November</h2>
-                        </div>
-                        <div class="ss-right">
-                            <h2>2011</h2>
-                        </div>
-                    </div>
-                    <div class="ss-row ss-medium">
-                        <div class="ss-left">
-                            <a href="#" class="ss-circle ss-circle-1">Some title</a>
-                        </div>
-                        <div class="ss-right">
-                            <h3>
-                                <span>November 28, 2011</span>
-                                <a href="#">Some Title</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="ss-row">
-                        <div class="ss-left">
-                            <h2 id="november">November</h2>
-                        </div>
-                        <div class="ss-right">
-                            <h2>2011</h2>
-                        </div>
-                    </div>
-                    <div class="ss-row ss-medium">
-                        <div class="ss-left">
-                            <a href="#" class="ss-circle ss-circle-1">Some title</a>
-                        </div>
-                        <div class="ss-right">
-                            <h3>
-                                <span>November 28, 2011</span>
-                                <a href="#">Some Title</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <!-- more rows... -->
-                </div>
             </div>
         </div>
+    </div>
+    </div>
+</section>
+
+<section class="success">
+    <div class="container-fluid">
+    <div id="ss-container" class="ss-container">
+        <div class="ss-row">
+            <div class="ss-left">
+                <h2 id="november">November</h2>
+            </div>
+            <div class="ss-right">
+                <h2>2011</h2>
+            </div>
+        </div>
+        <div class="ss-row ss-medium">
+            <div class="ss-left">
+                <a href="#" class="ss-circle ss-circle-1">Some title</a>
+            </div>
+            <div class="ss-right">
+                <h3>
+                    <span>November 28, 2011</span>
+                    <a href="#">Some Title</a>
+                </h3>
+            </div>
+        </div>
+        <div class="ss-row">
+            <div class="ss-left">
+                <h2 id="november">November</h2>
+            </div>
+            <div class="ss-right">
+                <h2>2011</h2>
+            </div>
+        </div>
+        <div class="ss-row ss-medium">
+            <div class="ss-left">
+                <a href="#" class="ss-circle ss-circle-1">Some title</a>
+            </div>
+            <div class="ss-right">
+                <h3>
+                    <span>November 28, 2011</span>
+                    <a href="#">Some Title</a>
+                </h3>
+            </div>
+        </div>
+        <div class="ss-row">
+            <div class="ss-left">
+                <h2 id="november">November</h2>
+            </div>
+            <div class="ss-right">
+                <h2>2011</h2>
+            </div>
+        </div>
+        <div class="ss-row ss-medium">
+            <div class="ss-left">
+                <a href="#" class="ss-circle ss-circle-1">Some title</a>
+            </div>
+            <div class="ss-right">
+                <h3>
+                    <span>November 28, 2011</span>
+                    <a href="#">Some Title</a>
+                </h3>
+            </div>
+        </div>
+        <div class="ss-row">
+            <div class="ss-left">
+                <h2 id="november">November</h2>
+            </div>
+            <div class="ss-right">
+                <h2>2011</h2>
+            </div>
+        </div>
+        <div class="ss-row ss-medium">
+            <div class="ss-left">
+                <a href="#" class="ss-circle ss-circle-1">Some title</a>
+            </div>
+            <div class="ss-right">
+                <h3>
+                    <span>November 28, 2011</span>
+                    <a href="#">Some Title</a>
+                </h3>
+            </div>
+        </div>
+        <div class="ss-row">
+            <div class="ss-left">
+                <h2 id="november">November</h2>
+            </div>
+            <div class="ss-right">
+                <h2>2011</h2>
+            </div>
+        </div>
+        <div class="ss-row ss-medium">
+            <div class="ss-left">
+                <a href="#" class="ss-circle ss-circle-1">Some title</a>
+            </div>
+            <div class="ss-right">
+                <h3>
+                    <span>November 28, 2011</span>
+                    <a href="#">Some Title</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- more rows... -->
     </div>
 </section>
 
