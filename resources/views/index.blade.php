@@ -112,7 +112,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Following my upbringing in Singapore, my family moved to Penticton, British Columbia, Canada, where I currently reside. While pursuing my BBA (Accounting), I developed a longing for something more dynamic, 'hands-on', and technologically involved. Thanks to some basic coding experience from the late 90's, Computer Science was a natural fit.</p>
+                <p>Following my upbringing in Singapore, my family moved to Penticton, British Columbia, Canada, where I currently reside. While pursuing my BBA, I developed a longing for something more dynamic, 'hands-on', and technologically involved. Thanks to some basic coding experience from the late 90's, Computer Science was a natural fit.</p>
             </div>
             <div class="col-lg-4">
                 <p>I am currently finishing a Bachelor's of Computer Science at the University of British Columbia (projected completion November 2015).</p>
@@ -123,8 +123,21 @@
     </div>
 </section>
 
+
+<!-- Script to hide/show timeline -->
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#timelineSec").hide();
+        });
+        $("#show").click(function(){
+            $("#timelineSec").show();
+        });
+    });
+</script>
+
 <!-- Resume Section -->
-<section class="success" id="resume">
+<section class="success" id="resume" style="padding-bottom: 0px">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -133,109 +146,260 @@
             </div>
         </div>
     </div>
+    <div align="center">
+        <button id="downloadResume" class="btn btn-primary btn-lg">Download Resume</button>
+        <div align="center">
+        <button id="show" class="btn btn-default btn-md">Show Timeline</button>
+        <button id="hide" class="btn btn-danger btn-md">Hide Timeline</button>
+    </div>
     </div>
 </section>
 
-<section class="success">
-    <div class="container-fluid">
-    <div id="ss-container" class="ss-container">
-        <div class="ss-row">
-            <div class="ss-left">
-                <h2 id="november">November</h2>
+<!-- Timeline Section -->
+<section class="success" style="padding-top: 0px;">
+    <div class="container-fluid"  id="timelineSec" >
+        <h2 class="ss-subtitle" align="center">Work and Education Timeline</h2>
+        <div id="ss-container" class="ss-container">
+            <div id="ss-links" class="ss-links">
+                <a href="#2008">2008</a>
+                <a href="#2010">2010</a>
+                <a href="#2011">2011</a>
+                <a href="#2012">2012</a>
+                <a href="#2013">2013</a>
+                <a href="#2014">2014</a>
+                <a href="#2015">2015</a>
             </div>
-            <div class="ss-right">
-                <h2>2011</h2>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2008">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2008</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-large">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-1">Okanagan College</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>September 2008</span>
+                        <p>Enrolled: Bachelor of Business Administration Program</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Started BBA studies at Okanagan College (Accounting Specialty)</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2010">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2010</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-2">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>May-August 2010</span>
+                        <p>Bookkeeper: Penticton Veterinary Hospital</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Summer bookkeeping position at Penticton Veterinary Hospital</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Formulated weekly Excel and QuickBooks reports to track business performance metrics</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Maintained and managed computer and paper file systems</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Responsible for payroll duties of ~10 employees</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2011">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2011</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-2">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>May-August 2011</span>
+                        <p>Bookkeeper: Penticton Veterinary Hospital</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Summer bookkeeping position at Penticton Veterinary Hospital</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-3">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>October-December 2011</span>
+                        <p>Enrolled: H&R Block Tax School</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Enrolled in and completed H&R Block tax school while taking a full 4th year BBA course load.</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Interviewed and offered a job upon completion.</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2012">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2012</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-3">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>January-April 2012</span>
+                        <p>Certified Tax Professional: H&R Block</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">H&R Block Certified Tax Professional at H&R Block K.L.O. Road Office</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Prepared and filed (paper-file and e-file) personal income tax returns</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Job required a comprehensive knowledge of the personal income tax system</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Used downtime to increase prior client return rate via phone solicitation</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-2">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>May-August 2012</span>
+                        <p>Bookkeeper: Penticton Veterinary Hospital</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Summer bookkeeping position at Penticton Veterinary Hospital</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-1">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>June 2012</span>
+                        <p>Convocation: Bachelor of Business Administration</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Received Bachelor's Degree - BBA: Accounting Specialty</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-large">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-4">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>September 2012</span>
+                        <p>Enrolled: Bachelor of Computer Science Program (Integrated Computer Science Program)</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Started BCS studies at the University of British Columbia</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2013">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2013</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-4">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>January 2013</span>
+                        <p>Accepted: UBC Computer Science Co-op Program</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Accepted into the Co-op program of UBC's Computer Science Department</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-large">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-5">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>September 2013</span>
+                        <p>Co-op Internship: NetApp - Software Developer Intern in Test (StorageGRID)</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Started internship at NetApp VTC location</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Agile Development Process</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Test automation in Ruby</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - QA testing infrastructure (i.e. libraries) in Ruby</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Procedural test automation in Cucumber</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Jenkins test integration and monitoring</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Testing of potential 3rd party software for product integration</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none"> - Side project done for professional services team in Java</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2014">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2014</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-6">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>May 2014</span>
+                        <p>NetApp Internship Ended / NetApp Part-time Begins / Return to Studies</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Internship Ended at NetApp VTC</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Offered and accepted part-time position with existing duties</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Returned to full time studies</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row ss-small">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-5">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>July 2014</span>
+                        <p>Departed NetApp</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Left NetApp to focus on studies</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="ss-row">
+                <div class="ss-left">
+                    <h2 id="2015">YEAR:</h2>
+                </div>
+                <div class="ss-right">
+                    <h2>2015</h2>
+                </div>
+            </div>
+            <div class="ss-row ss-medium">
+                <div class="ss-left">
+                    <div class="ss-circle ss-circle-4">Some title</div>
+                </div>
+                <div class="ss-right">
+                    <h3>
+                        <span>November 2015</span>
+                        <p>(PROJECTED) - Convocation: Bachelor of Computer Science</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Courses to be finished August 2015</p>
+                        <p style="font-family:'lato' ; font-size:13px ; text-transform:none">Degree convocation date: November 2015</p>
+                    </h3>
+                </div>
             </div>
         </div>
-        <div class="ss-row ss-medium">
-            <div class="ss-left">
-                <a href="#" class="ss-circle ss-circle-1">Some title</a>
-            </div>
-            <div class="ss-right">
-                <h3>
-                    <span>November 28, 2011</span>
-                    <a href="#">Some Title</a>
-                </h3>
-            </div>
-        </div>
-        <div class="ss-row">
-            <div class="ss-left">
-                <h2 id="november">November</h2>
-            </div>
-            <div class="ss-right">
-                <h2>2011</h2>
-            </div>
-        </div>
-        <div class="ss-row ss-medium">
-            <div class="ss-left">
-                <a href="#" class="ss-circle ss-circle-1">Some title</a>
-            </div>
-            <div class="ss-right">
-                <h3>
-                    <span>November 28, 2011</span>
-                    <a href="#">Some Title</a>
-                </h3>
-            </div>
-        </div>
-        <div class="ss-row">
-            <div class="ss-left">
-                <h2 id="november">November</h2>
-            </div>
-            <div class="ss-right">
-                <h2>2011</h2>
-            </div>
-        </div>
-        <div class="ss-row ss-medium">
-            <div class="ss-left">
-                <a href="#" class="ss-circle ss-circle-1">Some title</a>
-            </div>
-            <div class="ss-right">
-                <h3>
-                    <span>November 28, 2011</span>
-                    <a href="#">Some Title</a>
-                </h3>
-            </div>
-        </div>
-        <div class="ss-row">
-            <div class="ss-left">
-                <h2 id="november">November</h2>
-            </div>
-            <div class="ss-right">
-                <h2>2011</h2>
-            </div>
-        </div>
-        <div class="ss-row ss-medium">
-            <div class="ss-left">
-                <a href="#" class="ss-circle ss-circle-1">Some title</a>
-            </div>
-            <div class="ss-right">
-                <h3>
-                    <span>November 28, 2011</span>
-                    <a href="#">Some Title</a>
-                </h3>
-            </div>
-        </div>
-        <div class="ss-row">
-            <div class="ss-left">
-                <h2 id="november">November</h2>
-            </div>
-            <div class="ss-right">
-                <h2>2011</h2>
-            </div>
-        </div>
-        <div class="ss-row ss-medium">
-            <div class="ss-left">
-                <a href="#" class="ss-circle ss-circle-1">Some title</a>
-            </div>
-            <div class="ss-right">
-                <h3>
-                    <span>November 28, 2011</span>
-                    <a href="#">Some Title</a>
-                </h3>
-            </div>
-        </div>
-    </div>
-    <!-- more rows... -->
+        <!-- more rows... -->
     </div>
 </section>
 
