@@ -359,20 +359,20 @@ h2.ss-subtitle:after{
     /*color: rgba(255,255,255,1);*/
 /*}*/
 .ss-circle-1{
-    background-image:url(../img/oclogo.jpg);
+    background-image:url(../img/timeline/oclogo.jpg);
 }
 .ss-circle-2{
-    background-image: url(../img/orangepaw.png);
+    background-image: url(../img/timeline/orangepaw.png);
 }
 .ss-circle-3{
-    background-image: url(../img/hrblock.jpg);
+    background-image: url(../img/timeline/hrblock.jpg);
 }
 .ss-circle-4{
-    background-image: url(../img/ubclogo.png);
+    background-image: url(../img/timeline/ubclogo.png);
 }
 .ss-circle-5{
-    background-image: url(../img/netapplogo.png);
+    background-image: url(../img/timeline/netapplogo.png);
 }
 .ss-circle-6{
-    background-image: url(../img/ubcNetappHorizontal.png);
+    background-image: url(../img/timeline/ubcNetappHorizontal.png);
 }

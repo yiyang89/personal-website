@@ -12,13 +12,16 @@
     <title>Yiyang Kok</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
     <link href="css/timeline.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -34,9 +37,13 @@
 
 
     <!-- Timeline Javascript Courtesy of: http://tympanus.net/codrops/2011/12/05/lateral-on-scroll-sliding-with-jquery/ -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    {{--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>--}}
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.11333.js"></script>
     <script type="text/javascript" src="js/jqueryEasing.js"></script>
+    <script type="text/javascript" src="js/animateScroll.js"></script>
+    <script type="text/javascript" src="js/progressbar.js"></script>
+
 
 
 </head>
@@ -89,12 +96,16 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/black_white_mini2.png" alt="">
-                <div class="intro-text">
-                    <span class="name"><h2>Yiyang Calvin Kok</h2></span>
-                    <hr class="star-light">
-                    <span class="skills">Web Developer - Developer in Test - Backend Developer</span>
+            <div class="block revealOnScroll" data-animation="fadeIn" data-timeout="400">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/black_white_mini2.png" alt="">
+                    <div class="intro-text">
+                        <span class="name"><h2>Yiyang Calvin Kok</h2></span>
+                        <hr class="star-header">
+                        <span class="skills">Web Developer - Developer in Test - Backend Developer</span>
+                    </div>
+                    <a href="https://ca.linkedin.com/pub/yiyang-kok/11/325/304"  target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                    <a href="https://plus.google.com/u/0/115473166870881118586/about/p/pub" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                 </div>
             </div>
         </div>
@@ -104,6 +115,7 @@
 <!-- About Section -->
 <section id="about">
     <div class="container">
+        <div class="block revealOnScroll" data-animation="fadeIn">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>About</h2>
@@ -120,6 +132,7 @@
                 <p>In my spare time I enjoy snowboarding, photography, weightlifting, hi-fi audio, and travelling (when I find time!).</p>
             </div>
         </div>
+            </div>
     </div>
 </section>
 
@@ -137,27 +150,23 @@
 </script>
 
 <!-- Resume Section -->
-<section class="success" id="resume" style="padding-bottom: 0px">
+<section class="success" id="resume" style="overflow: hidden;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Resume</h2>
                 <hr class="star-light">
+                <button id="downloadResume" class="btn btn-success btn-lg">Download Resume</button>
+                <button id="show" class="btn btn-default btn-lg">Show Timeline</button>
+                <button id="hide" class="btn btn-danger btn-lg">Hide Timeline</button>
             </div>
         </div>
     </div>
-    <div align="center">
-        <button id="downloadResume" class="btn btn-primary btn-lg">Download Resume</button>
-        <div align="center">
-        <button id="show" class="btn btn-default btn-md">Show Timeline</button>
-        <button id="hide" class="btn btn-danger btn-md">Hide Timeline</button>
-    </div>
-    </div>
-</section>
+{{--</section>--}}
 
 <!-- Timeline Section -->
-<section class="success" style="padding-top: 0px;">
-    <div class="container-fluid"  id="timelineSec" >
+{{--<section class="success" style="padding-top: 0px; overflow: hidden;">--}}
+    <div class="container-fluid"  id="timelineSec" style="height:0 !important;">
         <h2 class="ss-subtitle" align="center">Work and Education Timeline</h2>
         <div id="ss-container" class="ss-container">
             <div id="ss-links" class="ss-links">
@@ -410,6 +419,124 @@
             <div class="col-lg-12 text-center">
                 <h2>Technologies</h2>
                 <hr class="star-primary">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="ruby-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>Ruby</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="c-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>C</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="java-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>Java</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="php-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="cucumber-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>Cucumber</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="junit-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>J-Unit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="rspec-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>RSpec</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="git-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>Git</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="sql-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="html-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>HTML</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="marged">
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <div id="css-circle"></div>
+                            </div>
+                            <div class="block revealOnScroll" data-animation="bounce">
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -840,6 +967,198 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/freelancer.js"></script>
 
+<!-- Technologies Circle JavaScript -->
+<script>
+    var circle1 = new ProgressBar.Circle('#ruby-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        ident: 'ruby',
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle1.animate(1, function() {
+        circle1.animate(.80);
+    })
+
+    var circle2 = new ProgressBar.Circle('#c-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle2.animate(1, function() {
+        circle2.animate(.70);
+    })
+
+    var circle3 = new ProgressBar.Circle('#java-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle3.animate(1, function() {
+        circle3.animate(.80);
+    })
+
+    var circle4 = new ProgressBar.Circle('#php-circle', {
+        color: '#E91E63',
+        strokeWidth:8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle4.animate(1, function() {
+        circle4.animate(.65);
+    })
+
+    var circle5 = new ProgressBar.Circle('#cucumber-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle5.animate(1, function() {
+        circle5.animate(.80);
+    })
+
+    var circle6 = new ProgressBar.Circle('#junit-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle6.animate(1, function() {
+        circle6.animate(.80);
+    })
+
+    var circle7 = new ProgressBar.Circle('#rspec-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle7.animate(1, function() {
+        circle7.animate(.80);
+    })
+
+    var circle8 = new ProgressBar.Circle('#git-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle8.animate(1, function() {
+        circle8.animate(.80);
+    })
+
+    var circle9 = new ProgressBar.Circle('#sql-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle9.animate(1, function() {
+        circle9.animate(.70);
+    })
+
+    var circle10 = new ProgressBar.Circle('#html-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle10.animate(1, function() {
+        circle10.animate(.80);
+    })
+
+    var circle11 = new ProgressBar.Circle('#css-circle', {
+        color: '#E91E63',
+        strokeWidth: 8,
+        trailWidth: 1,
+        duration: 1500,
+        text: {
+            value: '0'
+        },
+        step: function(state, bar) {
+            bar.setText((bar.value() * 100).toFixed(0));
+        }
+    });
+
+    circle11.animate(1, function() {
+        circle11.animate(.40);
+    })
+</script>
+
+<!-- BootStrap Script -->
 <script type="text/javascript">
     $(function() {
 

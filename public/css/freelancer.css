@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #072259;
 }
 
 h1,
@@ -36,6 +36,7 @@ h6 {
     font-weight: 700;
 }
 
+hr.star-header,
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -46,6 +47,7 @@ hr.star-primary {
     text-align: center;
 }
 
+hr.star-header:after,
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -57,13 +59,22 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
+hr.star-header {
+    border-color: #fff;
+}
+
+hr.star-header:after {
+    color: #fff;
+    background-color: #213243;
+}
+
 hr.star-light {
     border-color: #fff;
 }
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #213243;
 }
 
 hr.star-primary {
@@ -82,7 +93,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #213243;
 }
 
 header .container {
@@ -181,7 +192,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #213243;
 }
 
 section.success a,
@@ -274,7 +285,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #072259;
     background: #fff;
 }
 
@@ -327,7 +338,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #072259;
 }
 
 form .row:first-child .floating-label-form-group {
