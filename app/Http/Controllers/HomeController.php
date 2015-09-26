@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Http\Response;
+
 class HomeController extends Controller {
 
 	/*
@@ -32,5 +34,15 @@ class HomeController extends Controller {
 	{
 		return view('home');
 	}
+
+    public function downloadResume()
+    {
+        $file = public_path()."/Yiyang-Kok-Resume.pdf";
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+        return response()->download($file, 'Yiyang-Kok-Resume.pdf', $headers);
+
+    }
 
 }

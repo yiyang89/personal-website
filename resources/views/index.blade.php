@@ -124,10 +124,10 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Following my upbringing in Singapore, my family moved to Penticton, British Columbia, Canada, where I currently reside. While pursuing my BBA, I developed a longing for something more dynamic, 'hands-on', and technologically involved. Thanks to some basic coding experience from the late 90's, Computer Science was a natural fit.</p>
+                <p>Growing up in Canada and Singapore in the late 90's through the 00's I developed an interest in technology, dabbling into webpage construction with Frontpage Express and some HTML know-how. While pursuing my BBA, I developed a longing for something more dynamic, 'hands-on', and technologically involved (to foster aforementioned interest). Thanks to my 'basic' coding experience, Computer Science was a natural fit.</p>
             </div>
             <div class="col-lg-4">
-                <p>I am currently finishing a Bachelor's of Computer Science at the University of British Columbia (projected completion November 2015).</p>
+                <p>I have since completed a Bachelor's of Computer Science at the University of British Columbia (Vancouver). Convocation in November 2015!</p>
                 <br>
                 <p>In my spare time I enjoy snowboarding, photography, weightlifting, hi-fi audio, and travelling (when I find time!).</p>
             </div>
@@ -156,7 +156,10 @@
             <div class="col-lg-12 text-center">
                 <h2>Resume</h2>
                 <hr class="star-light">
-                <button id="downloadResume" class="btn btn-success btn-lg">Download Resume</button>
+                <form name="resumeForm" class="form-horizontal" role="form" method="POST" action="{{ url('/downloadResumeAction') }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <button id="downloadResume" class="btn btn-success btn-lg" type="submit">Download Resume</button>
+                </form>
                 <button id="show" class="btn btn-default btn-lg">Show Timeline</button>
                 <button id="hide" class="btn btn-danger btn-lg">Hide Timeline</button>
             </div>
@@ -424,60 +427,60 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="ruby-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>Ruby</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="c-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>C</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="java-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>Java</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="php-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>PHP</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="cucumber-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>Cucumber</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="junit-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>J-Unit</p>
                             </div>
                         </div>
@@ -488,50 +491,50 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="rspec-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>RSpec</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="git-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>Git</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="sql-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>SQL</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="html-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>HTML</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="marged">
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <div id="css-circle"></div>
                             </div>
-                            <div class="block revealOnScroll" data-animation="bounce">
+                            <div class="block revealOnScroll" data-animation="fadeInUp">
                                 <p>CSS</p>
                             </div>
                         </div>
@@ -559,7 +562,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/parkneat.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -569,7 +572,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/huffman.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
@@ -579,139 +582,133 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/TMMS.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                </a>
-            </div>
+            {{--<div class="col-sm-4 portfolio-item">--}}
+                {{--<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">--}}
+                    {{--<div class="caption">--}}
+                        {{--<div class="caption-content">--}}
+                            {{--<i class="fa fa-search-plus fa-3x"></i>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<img src="img/portfolio/game.png" class="img-responsive" alt="">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="col-sm-4 portfolio-item">--}}
+                {{--<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">--}}
+                    {{--<div class="caption">--}}
+                        {{--<div class="caption-content">--}}
+                            {{--<i class="fa fa-search-plus fa-3x"></i>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<img src="img/portfolio/safe.png" class="img-responsive" alt="">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="col-sm-4 portfolio-item">--}}
+                {{--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">--}}
+                    {{--<div class="caption">--}}
+                        {{--<div class="caption-content">--}}
+                            {{--<i class="fa fa-search-plus fa-3x"></i>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<img src="img/portfolio/submarine.png" class="img-responsive" alt="">--}}
+                {{--</a>--}}
+            {{--</div>--}}
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contact Me</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success btn-lg">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<!-- Contact Section -->--}}
+{{--<section id="contact">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-12 text-center">--}}
+                {{--<h2>Contact Me</h2>--}}
+                {{--<hr class="star-primary">--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-8 col-lg-offset-2">--}}
+                {{--<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->--}}
+                {{--<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->--}}
+                {{--<form name="sentMessage" id="contactForm" novalidate>--}}
+                    {{--<div class="row control-group">--}}
+                        {{--<div class="form-group col-xs-12 floating-label-form-group controls">--}}
+                            {{--<label>Name</label>--}}
+                            {{--<input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">--}}
+                            {{--<p class="help-block text-danger"></p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row control-group">--}}
+                        {{--<div class="form-group col-xs-12 floating-label-form-group controls">--}}
+                            {{--<label>Email Address</label>--}}
+                            {{--<input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">--}}
+                            {{--<p class="help-block text-danger"></p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row control-group">--}}
+                        {{--<div class="form-group col-xs-12 floating-label-form-group controls">--}}
+                            {{--<label>Phone Number</label>--}}
+                            {{--<input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">--}}
+                            {{--<p class="help-block text-danger"></p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row control-group">--}}
+                        {{--<div class="form-group col-xs-12 floating-label-form-group controls">--}}
+                            {{--<label>Message</label>--}}
+                            {{--<textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>--}}
+                            {{--<p class="help-block text-danger"></p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<br>--}}
+                    {{--<div id="success"></div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="form-group col-xs-12">--}}
+                            {{--<button type="submit" class="btn btn-success btn-lg">Send</button>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</form>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 
 <!-- Footer -->
 <footer class="text-center">
     <div class="footer-above">
         <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>Location</h3>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                </div>
-                <div class="footer-col col-md-4">
+            {{--<div class="row">--}}
+                {{--<div class="footer-col col-md-4">--}}
+                    {{--<h3>Location</h3>--}}
+                    {{--<p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>--}}
+                {{--</div>--}}
+                <div class="footer-col">
                     <h3>Around the Web</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/yiyang.kok?fref=ts" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <a href="https://plus.google.com/115473166870881118586/posts" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <a href="https://ca.linkedin.com/pub/yiyang-%22calvin%22-kok/11/325/304" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-col col-md-4">
-                    <h3>About Freelancer</h3>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                </div>
-            </div>
+                {{--<div class="footer-col col-md-4">--}}
+                    {{--<h3>About Freelancer</h3>--}}
+                    {{--<p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
     <div class="footer-below">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Your Website 2014
+                    Copyright &copy; Yiyang Kok 2015
                 </div>
             </div>
         </div>
@@ -738,21 +735,25 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>ParkNEat</h2>
                         <hr class="star-primary">
-                        <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <img src="img/portfolio/parkneat.png" class="img-responsive img-centered" alt="">
+                        <p>A team project built with the GWT toolkit for restaurants and nearby parking lookup within the city of Vancouver. Uses: Yelp web API and City of Vancouver parking datasets.</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Class:
+                                <strong>UBC CPSC 310
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <strong>Summer 2014
                                 </strong>
                             </li>
                             <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <strong>Web Development
+                                </strong>
+                            </li>
+                            <li>Hosted at:
+                                <strong><a href="http://yiyangkokdev.appspot.com" target="_blank">ParkNEat</a>
                                 </strong>
                             </li>
                         </ul>
@@ -775,21 +776,21 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Huffman's Algorithm</h2>
                         <hr class="star-primary">
-                        <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <img src="img/portfolio/huffman.png" class="img-responsive img-centered" alt="">
+                        <p>Huffman's Algorithm implemented in Ruby. Used for compressing and decompressing large .txt files. Average space savings around 35-40%.</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                            <li>Class:
+                                <strong>UBC CPSC 320
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <strong>Summer 2014
                                 </strong>
                             </li>
                             <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <strong>Terminal Executed Program
                                 </strong>
                             </li>
                         </ul>
@@ -812,17 +813,18 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Tri-Mentoring Matching System</h2>
                         <hr class="star-primary">
-                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <img src="img/portfolio/TMMS.png" class="img-responsive img-centered" alt="">
+                        <p>Web-based team software project implemented in PHP using the Laravel 5 framework. Processes applicants and matches them on compatibility. Multiple data export types available for office use.</p>
+                        <p>Personal responsibilities mainly related to database monitoring, database transactions, File I/O, testing, and setting up development environments for team members on OSX. Our team's project was selected by the client out of 4 competing projects. </p>
                         <ul class="list-inline item-details">
                             <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <strong>UBC Computer Science Department Office (Tri-Mentoring)
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <strong>January-April 2015
                                 </strong>
                             </li>
                             <li>Service:

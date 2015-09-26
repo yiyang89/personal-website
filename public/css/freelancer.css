@@ -360,6 +360,8 @@ footer .footer-above {
 
 footer .footer-col {
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer .footer-below {
